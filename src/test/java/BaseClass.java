@@ -28,7 +28,7 @@ public class BaseClass {
     public void SportPageVerifiation(){
         WebElement wSport = driver.findElement(By.xpath("//a[@href = \"//sport.blic.rs/\"]"));
         wSport.click();
-        String sSport = "Blic Sport1";
+        String sSport = "Blic Sport";
         Assert.assertEquals(sSport, driver.getTitle());
 
     }
