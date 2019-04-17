@@ -21,7 +21,8 @@ public class BaseClass {
     public void HomePageVerification(){
         driver.get("Https://blic.rs");
         String sTitle =  "Blic Online - Najposećeniji sajt u Srbiji";
-        Assert.assertEquals(sTitle, driver.getTitle());
+        Assert.assertTrue(driver.getTitle().contains("Blic "));
+     //   Assert.assertEquals(sTitle, driver.getTitle().contains("Blic "));
     }
 
     @Test (dependsOnMethods={"HomePageVerification"})
