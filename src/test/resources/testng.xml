@@ -2,12 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name = "BlicTest">
-    <test name = "P1 Test">
+    <test name = "P1_Test">
         <classes>
             <class name = "BaseClass">
-                <methods>
-                    <exclude name="SportPageVerifiation"></exclude>
-                </methods>
+
             </class>
         </classes>
     </test>
