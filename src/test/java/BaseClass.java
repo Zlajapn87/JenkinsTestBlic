@@ -8,9 +8,21 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.Assertion;
 
+import java.util.Collections;
+import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
+
+
 public class BaseClass {
+   public void setLevel(){
+       Logger.getLogger("org.openqa.selenium.remote").setLevel(Level.OFF);
+   }
+
 
     public static WebDriver driver;
+
     @BeforeClass
     public void setUp(){
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\nikola.zlatkovic\\Desktop\\Selenium\\1\\chromedriver.exe");
