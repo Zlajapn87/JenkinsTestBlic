@@ -16,9 +16,10 @@ import java.util.logging.Logger;
 
 
 public class BaseClass {
-   public void setLevel(){
+
+    /*public void setLevel(){
        Logger.getLogger("org.openqa.selenium.remote").setLevel(Level.OFF);
-   }
+   } */
 
 
     public static WebDriver driver;
