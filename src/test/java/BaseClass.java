@@ -13,7 +13,7 @@ public class BaseClass {
     public static WebDriver driver;
     @BeforeClass
     public void setUp(){
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\nikola.zlatkovic\\ZlajaWorkspace\\com.TCRM\\src\\test\\resources\\driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\nikola.zlatkovic\\Desktop\\Selenium\\1\\chromedriver.exe");
         driver = new ChromeDriver();
     }
 
