@@ -46,6 +46,7 @@ public class BaseClass {
         Assert.assertEquals(sSport, driver.getTitle());
 
     }
+
     @AfterClass
     public void tearDown(){
         driver.quit();
@@ -53,5 +54,4 @@ public class BaseClass {
 
 
 }
-
 
